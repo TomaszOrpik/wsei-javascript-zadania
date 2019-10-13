@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var a = document.getElementById("a");
   var b = document.getElementById("b");
 
-  // Tutaj this wskazuje na obiekt document (Ponieważ kontext wywołania funkcji
+  // Tutaj this wskazuje na obiekt document (Ponieważ kontekst wywołania funkcji
   // addEventListener to właśnie document)
   console.log("obiekt document: ", this);
 
@@ -24,5 +24,5 @@ document.addEventListener("DOMContentLoaded", function () {
     innerFuncOne();
 
   });
-
+  ///mogę przypisać event do zmiennej b, by wskazać this na ten element
 })

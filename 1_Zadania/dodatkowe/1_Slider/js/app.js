@@ -36,4 +36,6 @@ document.addEventListener("DOMContentLoaded", function() {
             li[current].className = "visible";
         }
     })
+    //slier się nie zapętla, index się nadal zwiększa choć brakuje elementów listy
+
 })

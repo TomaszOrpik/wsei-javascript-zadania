@@ -34,7 +34,7 @@ function checkArray(arr) {
             if(arr[i][j]%2 != 0)
                 checked = false;
         }  
-        arr.push(checked);
+        newArr.push(checked);
     }
     return newArr;
 }

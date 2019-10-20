@@ -27,14 +27,15 @@ var arr = [
 
 function checkArray(arr) {
     var newArr = [];
-
+    
     for(var i = 0; i<arr.length; i++) {
-        if(arr[i][0]%2 == 0 && arr[i][1]%2 == 0)
-            newArr.push(true);
-        else
-            newArr.push(false);
-        }
-
+        let checked = true;
+        for(let j=0;j<arr[i].length; j++) {
+            if(arr[i][j]%2 != 0)
+                checked = false;
+        }  
+        arr.push(checked);
+    }
     return newArr;
 }
 
